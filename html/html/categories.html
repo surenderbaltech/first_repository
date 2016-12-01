@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Relatio Admin</title>
+<link rel="icon" href="images/favicon.ico">
+<!-- BEGIN META -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!-- END META -->
+
+<!-- BEGIN STYLESHEETS font-family: 'Source Sans Pro', sans-serif; -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="css/relatio-admin.css" />
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- END STYLESHEETS -->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/ie/html5shiv.js"></script>
+	<script type="text/javascript" src="js/ie/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="menubar-hoverable header-fixed menubar-pin">
+<!-- BEGIN HEADER-->
+<header id="header" >
+  <div class="headerbar"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="headerbar-left">
+      <ul class="header-nav header-nav-options">
+        <li class="header-nav-brand" >
+          <div class="brand-holder"> <a href="index.html"><img alt="" src="images/logo.png"></a> </div>
+        </li>
+        <li> <a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);"> <i class="fa fa-bars"></i> </a> </li>
+      </ul>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="headerbar-right">
+      <ul class="header-nav header-nav-options invisible">
+        <li>
+          <button class="btn btn-icon-toggle" type="submit"><i class="fa fa-user"></i></button>
+        </li>
+      </ul>
+      <ul class="header-nav header-nav-profile">
+        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown"> <img src="images/user-icon.jpg" alt="" /> <span class="profile-info"> Ramiz Kharoufeh </span> </a>
+          <ul class="dropdown-menu animation-dock">
+            <li><a href="#"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- END HEADER--> 
+
+<!-- BEGIN BASE-->
+<div id="base"> 
+  
+  <!-- BEGIN CONTENT-->
+  <div id="content">
+    <section class="full-bleed">
+      <div class="section-body style-default-light top-button-bar">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pull-left"> <a class="btn ink-reaction btn-danger text-capitalize" href="#" data-target=".add-category-popup" data-toggle="modal">Add New Category</a> <a class="btn ink-reaction btn-danger text-capitalize" href="#" data-target=".add-class-popup" data-toggle="modal">Add New Class</a> <a class="btn ink-reaction btn-danger text-capitalize" href="#" data-target=".add-classification-popup" data-toggle="modal">Add New Classification</a> </div>
+            <div class="pull-right"> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="full-bleed">
+      <div class="section-body style-default-light top-alpha-bar">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="alphabet-tag">
+              <ul class="clearfix">
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="full-bleed">
+      <div class="section-body style-default-light top-tabs-bar">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="classification-tabs">
+              <ul class="clearfix">
+                <li class="active"><a href="categories.html">Categories</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="classifications.html">Classifications</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-body no-margin">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="alphabet-tag-box clearfix">
+              <h5>A</h5>
+              <div class="col-md-3">
+                <div class="tag-box clearfix">
+                  <div class="classification-name">
+                    <h6 class="main-name">Administrations</h6>
+                    <span class="sub-name">Hobbies</span> </div>
+                  <div class="tag-option">
+                    <ul>
+                      <li><a href="#" class="badge" data-toggle="tooltip" data-placement="top" data-original-title="Amount of gambits using this classification">22</a></li>
+                      <li><a class="btn btn-icon-toggle tooltip-enable" data-target=".edit-category-popup" data-toggle="modal" data-placement="top" href="javascript:void()" data-original-title="Edit"><i class="fa fa-pencil"></i></a></li>
+                      <li><a href="#" class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="tag-box clearfix">
+                  <div class="classification-name">
+                    <h6 class="main-name">Apple</h6>
+                    <span class="sub-name">Professions</span> </div>
+                  <div class="tag-option">
+                    <ul>
+                      <li><a href="#" class="badge" data-toggle="tooltip" data-placement="top" data-original-title="Amount of gambits using this classification">6</a></li>
+                      <li><a class="btn btn-icon-toggle tooltip-enable" data-target=".edit-category-popup" data-toggle="modal" data-placement="top" href="javascript:void()" data-original-title="Edit"><i class="fa fa-pencil"></i></a></li>
+                      <li><a href="#" class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="tag-box clearfix">
+                  <div class="classification-name">
+                    <h6 class="main-name">Applications</h6>
+                    <span class="sub-name">Professions</span> </div>
+                  <div class="tag-option">
+                    <ul>
+                      <li><a href="#" class="badge" data-toggle="tooltip" data-placement="top" data-original-title="Amount of gambits using this classification">5</a></li>
+                      <li><a class="btn btn-icon-toggle tooltip-enable" data-target=".edit-category-popup" data-toggle="modal" data-placement="top" href="javascript:void()" data-original-title="Edit"><i class="fa fa-pencil"></i></a></li>
+                      <li><a href="#" class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="tag-box clearfix">
+                  <div class="classification-name">
+                    <h6 class="main-name">Apps</h6>
+                    <span class="sub-name">Professions > Account</span> </div>
+                  <div class="tag-option">
+                    <ul>
+                      <li><a href="#" class="badge" data-toggle="tooltip" data-placement="top" data-original-title="Amount of gambits using this classification">9</a></li>
+                      <li><a class="btn btn-icon-toggle tooltip-enable" data-target=".edit-category-popup" data-toggle="modal" data-placement="top" href="javascript:void()" data-original-title="Edit"><i class="fa fa-pencil"></i></a></li>
+                      <li><a href="#" class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="alphabet-tag-box clearfix">
+              <h5>B</h5>
+              <div class="col-md-3">
+                <div class="tag-box clearfix">
+                  <div class="classification-name">
+                    <h6 class="main-name">Banking</h6>
+                    <span class="sub-name">Professions</span> </div>
+                  <div class="tag-option">
+                    <ul>
+                      <li><a href="#" class="badge" data-toggle="tooltip" data-placement="top" data-original-title="Amount of gambits using this classification">18</a></li>
+                      <li><a class="btn btn-icon-toggle tooltip-enable" data-target=".edit-category-popup" data-toggle="modal" data-placement="top" href="javascript:void()" data-original-title="Edit"><i class="fa fa-pencil"></i></a></li>
+                      <li><a href="#" class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="tag-box clearfix">
+                  <div class="classification-name">
+                    <h6 class="main-name">Billionaire</h6>
+                    <span class="sub-name">Hobbies</span> </div>
+                  <div class="tag-option">
+                    <ul>
+                      <li><a href="#" class="badge" data-toggle="tooltip" data-placement="top" data-original-title="Amount of gambits using this classification">7</a></li>
+                      <li><a class="btn btn-icon-toggle tooltip-enable" data-target=".edit-category-popup" data-toggle="modal" data-placement="top" href="javascript:void()" data-original-title="Edit"><i class="fa fa-pencil"></i></a></li>
+                      <li><a href="#" class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="tag-box clearfix">
+                  <div class="classification-name">
+                    <h6 class="main-name">Building</h6>
+                    <span class="sub-name">Hobbies</span> </div>
+                  <div class="tag-option">
+                    <ul>
+                      <li><a href="#" class="badge" data-toggle="tooltip" data-placement="top" data-original-title="Amount of gambits using this classification">11</a></li>
+                      <li><a class="btn btn-icon-toggle tooltip-enable" data-target=".edit-category-popup" data-toggle="modal" data-placement="top" href="javascript:void()" data-original-title="Edit"><i class="fa fa-pencil"></i></a></li>
+                      <li><a href="#" class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="tag-box clearfix">
+                  <div class="classification-name">
+                    <h6 class="main-name">Business</h6>
+                    <span class="sub-name">Hobbies</span> </div>
+                  <div class="tag-option">
+                    <ul>
+                      <li><a href="#" class="badge" data-toggle="tooltip" data-placement="top" data-original-title="Amount of gambits using this classification">5</a></li>
+                      <li><a class="btn btn-icon-toggle tooltip-enable" data-target=".edit-category-popup" data-toggle="modal" data-placement="top" href="javascript:void()" data-original-title="Edit"><i class="fa fa-pencil"></i></a></li>
+                      <li><a href="#" class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- END CONTENT --> 
+  
+  <!-- BEGIN MENUBAR-->
+  <div id="menubar" class=" ">
+    <div class="menubar-fixed-panel">
+      <div> <a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);"> <i class="fa fa-bars"></i> </a> </div>
+      <div class="expanded"> <a href="#"> <span class="text-lg text-bold text-primary ">RELATIO&nbsp;ADMIN</span> </a> </div>
+    </div>
+    <div class="menubar-scroll-panel"> 
+      <!-- BEGIN MAIN MENU -->
+      
+      <ul id="main-menu" class="gui-controls">
+        <li> <a href="index.html">
+          <div class="gui-icon"><i class="micon icon-1"></i></div>
+          <span class="title">Admin &amp; Settings</span> </a> </li>
+        <li> <a href="pages.html">
+          <div class="gui-icon"><i class="micon icon-2"></i></div>
+          <span class="title">Pages</span> </a> </li>
+        <li> <a href="tags.html">
+          <div class="gui-icon"><i class="micon icon-3"></i></div>
+          <span class="title">Tags</span> </a> </li>
+        <li> <a href="badges.html">
+          <div class="gui-icon"><i class="micon icon-4"></i></div>
+          <span class="title">Badges</span> </a> </li>
+        <li> <a href="classifications.html" class="active">
+          <div class="gui-icon"><i class="micon icon-5"></i></div>
+          <span class="title">Classifications</span> </a> </li>
+        <li> <a href="type.html">
+          <div class="gui-icon"><i class="micon icon-6"></i></div>
+          <span class="title">Type</span> </a> </li>
+        <li> <a href="users.html">
+          <div class="gui-icon"><i class="micon icon-7"></i></div>
+          <span class="title">Users</span> </a> </li>
+        <li> <a href="abuse-reports.html">
+          <div class="gui-icon"><i class="micon icon-8"></i></div>
+          <span class="title">Abuse Reports <span class="badge style-danger">4</span></span> </a> </li>
+      </ul>
+      
+      <!-- END MAIN MENU -->
+      
+      <div class="menubar-foot-panel"> <small class="hidden-folded"> <span>&copy; copyright 2016 Relatio Pty. Ltd.</span> <strong style="font-size:14px;">website by Zain Digital</strong> </small> </div>
+    </div>
+  </div>
+  <!-- END MENUBAR --> 
+  
+</div>
+<!-- END BASE --> 
+
+<!-- BEGIN ADD NEW CATEGORY POP UP-->
+<div class="modal fade add-category-popup" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add Category</h4>
+        <p class="modal-short-description"></p>
+      </div>
+      <div class="modal-body">
+        <div class="popup-form">
+          <form method="post" action="" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Name</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" class="form-control" value="Apple" name="name">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END ADD NEW CATEGORY POP UP --> 
+
+<!-- BEGIN EDIT CATEGORY POP UP-->
+<div class="modal fade edit-category-popup" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Edit Category</h4>
+        <p class="modal-short-description">All existing gambits linked to this classification will be updated to new classification, category and sub class.</p>
+      </div>
+      <div class="modal-body">
+        <div class="popup-form">
+          <form method="post" action="" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Name</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" class="form-control" value="Apple" name="name">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END EDIT CATEGORY POP UP --> 
+
+<!-- BEGIN ADD CLASS POP UP-->
+<div class="modal fade add-class-popup" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add Class</h4>
+        <p class="modal-short-description">Add a new class and assign the category which it best suits.</p>
+      </div>
+      <div class="modal-body">
+        <div class="popup-form">
+          <form method="post" action="" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Category</label>
+              </div>
+              <div class="col-md-9">
+                <select class="form-control">
+                  <option>Professions</option>
+                  <option>Hobbies</option>
+                  <option>Account</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Name</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Name" name="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Description</label>
+              </div>
+              <div class="col-md-9">
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END ADD CLASS POP UP--> 
+
+<!-- BEGIN EDIT CLASS POP UP-->
+<div class="modal fade edit-class-popup" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Edit Class</h4>
+        <p class="modal-short-description">All existing gambits and classifications linked to this class will be updated to the new information provided.</p>
+      </div>
+      <div class="modal-body">
+        <div class="popup-form">
+          <form method="post" action="" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Category</label>
+              </div>
+              <div class="col-md-9">
+                <select class="form-control">
+                  <option>Professions</option>
+                  <option>Hobbies</option>
+                  <option>Account</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Name</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Name" value="Academia" name="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Description</label>
+              </div>
+              <div class="col-md-9">
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END EDIT CLASS POP UP--> 
+
+<!-- BEGIN ADD CLASSIFICATION POP UP-->
+<div class="modal fade add-classification-popup" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add Classification</h4>
+        <p class="modal-short-description">Add a new classification and assign the class which it best suits.</p>
+      </div>
+      <div class="modal-body">
+        <div class="popup-form">
+          <form method="post" action="" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Class</label>
+              </div>
+              <div class="col-md-9">
+                <select class="form-control">
+                  <option>Academia</option>
+                  <option>Administration</option>
+                  <option>Advertising, Arts &amp; Media</option>
+                  <option>Banking &amp; Financial Services</option>
+                  <option>Call Centre &amp; Customer Service</option>
+                  <option>Community &amp; Public Service</option>
+                  <option>Consulting</option>
+                  <option>Desig &amp; Architecture</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Name</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Name" name="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Description</label>
+              </div>
+              <div class="col-md-9">
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END ADD CLASSIFICATION POP UP--> 
+
+<!-- BEGIN EDIT CLASSIFICATION POP UP-->
+<div class="modal fade edit-classifications-popup" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Edit Classification</h4>
+        <p class="modal-short-description">All existing gambits linked to this classification will be updated to the new information provided.</p>
+      </div>
+      <div class="modal-body">
+        <div class="popup-form">
+          <form method="post" action="" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Class</label>
+              </div>
+              <div class="col-md-9">
+                <select class="form-control">
+                  <option>Academia</option>
+                  <option>Administration</option>
+                  <option>Advertising, Arts &amp; Media</option>
+                  <option>Banking &amp; Financial Services</option>
+                  <option>Call Centre &amp; Customer Service</option>
+                  <option>Community &amp; Public Service</option>
+                  <option>Consulting</option>
+                  <option>Desig &amp; Architecture</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Name</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Name" value="Professors" name="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <label class="control-label">Description</label>
+              </div>
+              <div class="col-md-9">
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END EDIT CLASSIFICATION POP UP--> 
+
+<!-- BEGIN JAVASCRIPT --> 
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/jquery-migrate-1.2.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.nanoscroller.min.js"></script> 
+<script src="js/main.js"></script> 
+<!-- END JAVASCRIPT -->
+</body>
+</html>

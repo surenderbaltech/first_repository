@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Relatio Admin</title>
+<link rel="icon" href="images/favicon.ico">
+<!-- BEGIN META -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!-- END META -->
+
+<!-- BEGIN STYLESHEETS font-family: 'Source Sans Pro', sans-serif; -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="css/relatio-admin.css" />
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- END STYLESHEETS -->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/ie/html5shiv.js"></script>
+	<script type="text/javascript" src="js/ie/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="menubar-hoverable header-fixed menubar-pin">
+<!-- BEGIN HEADER-->
+<header id="header" >
+  <div class="headerbar"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="headerbar-left">
+      <ul class="header-nav header-nav-options">
+        <li class="header-nav-brand" >
+          <div class="brand-holder"> <a href="index.html"><img alt="" src="images/logo.png"></a> </div>
+        </li>
+        <li> <a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);"> <i class="fa fa-bars"></i> </a> </li>
+      </ul>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="headerbar-right">
+      <ul class="header-nav header-nav-options invisible">
+        <li>
+          <button class="btn btn-icon-toggle" type="submit"><i class="fa fa-user"></i></button>
+        </li>
+      </ul>
+      <ul class="header-nav header-nav-profile">
+        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown"> <img src="images/user-icon.jpg" alt="" /> <span class="profile-info"> Ramiz Kharoufeh </span> </a>
+          <ul class="dropdown-menu animation-dock">
+            <li><a href="#"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- END HEADER--> 
+
+<!-- BEGIN BASE-->
+<div id="base"> 
+  
+  <!-- BEGIN CONTENT-->
+  <div id="content">
+    <section class="full-bleed">
+      <div class="section-body style-default-light top-button-bar">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pull-left"></div>
+            <div class="pull-right"> <a href="#" class="btn ink-reaction btn-success text-capitalize">Update</a> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-body no-margin">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-head">
+                <ul data-toggle="tabs" class="nav nav-tabs no-padding">
+                  <li class="active"><a href="#first1">General</a></li>
+                  <li class=""><a href="#second1">Social Media</a></li>
+                </ul>
+              </div>
+              <!--end .card-head -->
+              <div class="card-body tab-content">
+                <div id="first1" class="tab-pane active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <label>Logo</label>
+                      <div class="upload-photo"> <span class="camera-icon"></span> </div>
+                      <div class="upload-btn clearfix"> <a href="javascript:void(0)" class="btn ink-reaction btn-danger pull-left upl-btn">Upload Photo
+                        <input type="file" hidden="hidden">
+                        </a>
+                        <button data-original-title="Delete" data-placement="top" data-toggle="tooltip" class="btn btn-icon-toggle hide" type="button"><i class="fa fa-trash-o"></i></button>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <form class="form">
+                        <div class="form-group">
+                          <label>Email address for notifications to be delivered to</label>
+                          <input type="text" class="form-control" value="alerts@relatio.com.au">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div id="second1" class="tab-pane">
+                  <form class="form">
+                    <h4 class="card-label">Add your Social Media links</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon facebook"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Facebook">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon twitter"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Twitter">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon googleplus"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Google Plus">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon instagram"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Instagram">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon youtube"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Youtube">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon vimeo"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Vimeo">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon pinterest"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Pinterest">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon linkedIn"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="LinkedIn">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon behance"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Behance">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon tumblr"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Tumblr">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon flickr"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Flickr">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon blogger"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Blogger">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon dribbble"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Dribbble">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon skype"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="Skype">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="input-group"> <span class="input-group-addon"><span class="social-icon rss"></span></span>
+                            <div class="input-group-content">
+                              <input type="text" class="form-control" placeholder="RSS Feed">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
+              <!--end .card-body --> 
+            </div>
+            <div class="card">
+              <form class="form">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Admin First Name</label>
+                        <input type="text" class="form-control" value="Ramiz">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Admin Surname</label>
+                        <input type="text" class="form-control" value="Kharoufeh">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Admin Username</label>
+                        <input type="text" class="form-control" value="Admin">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Admin Login Email Address</label>
+                        <input type="text" class="form-control" value="ramiz@relatio.com.au">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>New Password</label>
+                        <input type="password" class="form-control" value="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Confirm New Password</label>
+                        <input type="password" class="form-control" value="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--end .card --> 
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- END CONTENT --> 
+  
+  <!-- BEGIN MENUBAR-->
+  <div id="menubar" class=" ">
+    <div class="menubar-fixed-panel">
+      <div> <a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);"> <i class="fa fa-bars"></i> </a> </div>
+      <div class="expanded"> <a href="#"> <span class="text-lg text-bold text-primary ">RELATIO&nbsp;ADMIN</span> </a> </div>
+    </div>
+    <div class="menubar-scroll-panel"> 
+      <!-- BEGIN MAIN MENU -->
+      
+      <ul id="main-menu" class="gui-controls">
+        <li> <a href="index.html" class="active">
+          <div class="gui-icon"><i class="micon icon-1"></i></div>
+          <span class="title">Admin &amp; Settings</span> </a> </li>
+        <li> <a href="pages.html">
+          <div class="gui-icon"><i class="micon icon-2"></i></div>
+          <span class="title">Pages</span> </a> </li>
+        <li> <a href="tags.html">
+          <div class="gui-icon"><i class="micon icon-3"></i></div>
+          <span class="title">Tags</span> </a> </li>
+        <li> <a href="badges.html">
+          <div class="gui-icon"><i class="micon icon-4"></i></div>
+          <span class="title">Badges</span> </a> </li>
+        <li> <a href="classifications.html">
+          <div class="gui-icon"><i class="micon icon-5"></i></div>
+          <span class="title">Classifications</span> </a> </li>
+        <li> <a href="type.html">
+          <div class="gui-icon"><i class="micon icon-6"></i></div>
+          <span class="title">Type</span> </a> </li>
+        <li> <a href="users.html">
+          <div class="gui-icon"><i class="micon icon-7"></i></div>
+          <span class="title">Users</span> </a> </li>
+        <li> <a href="abuse-reports.html">
+          <div class="gui-icon"><i class="micon icon-8"></i></div>
+          <span class="title">Abuse Reports <span class="badge style-danger">4</span></span> </a> </li>
+      </ul>
+      
+      <!-- END MAIN MENU -->
+      
+      <div class="menubar-foot-panel"> <small class="hidden-folded"> <span>&copy; copyright 2016 Relatio Pty. Ltd.</span> <strong style="font-size:14px;">website by Zain Digital</strong> </small> </div>
+    </div>
+  </div>
+  <!-- END MENUBAR --> 
+  
+</div>
+<!-- END BASE --> 
+
+<!-- BEGIN JAVASCRIPT --> 
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/jquery-migrate-1.2.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.nanoscroller.min.js"></script> 
+<script src="js/main.js"></script> 
+<!-- END JAVASCRIPT -->
+</body>
+</html>

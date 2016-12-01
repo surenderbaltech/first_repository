@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Relatio Admin</title>
+<link rel="icon" href="images/favicon.ico">
+<!-- BEGIN META -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!-- END META -->
+
+<!-- BEGIN STYLESHEETS font-family: 'Source Sans Pro', sans-serif; -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="css/relatio-admin.css" />
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- END STYLESHEETS -->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/ie/html5shiv.js"></script>
+	<script type="text/javascript" src="js/ie/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="menubar-hoverable header-fixed menubar-pin">
+<!-- BEGIN HEADER-->
+<header id="header" >
+  <div class="headerbar"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="headerbar-left">
+      <ul class="header-nav header-nav-options">
+        <li class="header-nav-brand" >
+          <div class="brand-holder"> <a href="index.html"><img alt="" src="images/logo.png"></a> </div>
+        </li>
+        <li> <a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);"> <i class="fa fa-bars"></i> </a> </li>
+      </ul>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="headerbar-right">
+      <ul class="header-nav header-nav-options invisible">
+        <li>
+          <button class="btn btn-icon-toggle" type="submit"><i class="fa fa-user"></i></button>
+        </li>
+      </ul>
+      <ul class="header-nav header-nav-profile">
+        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown"> <img src="images/user-icon.jpg" alt="" /> <span class="profile-info"> Ramiz Kharoufeh </span> </a>
+          <ul class="dropdown-menu animation-dock">
+            <li><a href="#"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- END HEADER--> 
+
+<!-- BEGIN BASE-->
+<div id="base"> 
+  
+  <!-- BEGIN CONTENT-->
+  <div id="content">
+    <section class="full-bleed">
+      <div class="section-body style-default-light top-button-bar">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pull-left"><a href="#" class="btn ink-reaction btn-danger text-capitalize">Add New Badge</a></div>
+            <div class="pull-right"><a href="#" class="btn ink-reaction btn-success text-capitalize">Update</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-body no-margin">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="card-main-title">Points</h3>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>Page Heading <span class="page-sub-heading">Main page title</span></label>
+                      <input type="text" class="form-control" value="Points System">
+                    </div>
+                    <div class="form-group">
+                      <label>Sub title <span class="page-sub-heading">The description that appears under the title</span></label>
+                      <input type="text" class="form-control" value="You earn reputation when people vote on your posts">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="card-main-title pad-t30">Number of points</h3>
+            <div class="card w-225">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:0;">
+                      <label>Create a gambit</label>
+                      <div class="row">
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control input-xxl" value="2">
+                        </div>
+                        <div class="col-sm-2 opts-icons point-opt"> <a class="btn btn-icon-toggle" href="#"><i class="fa fa-arrows"></i></a> <a class="btn btn-icon-toggle" href="#"><i class="fa fa-trash-o"></i></a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card w-225">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:0;">
+                      <label>Gambit is voted up</label>
+                      <div class="row">
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control input-xxl" value="2">
+                        </div>
+                        <div class="col-sm-2 opts-icons point-opt"> <a class="btn btn-icon-toggle" href="#"><i class="fa fa-arrows"></i></a> <a class="btn btn-icon-toggle" href="#"><i class="fa fa-trash-o"></i></a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card w-225">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:0;">
+                      <label>Post is voted up</label>
+                      <div class="row">
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control input-xxl" value="2">
+                        </div>
+                        <div class="col-sm-2 opts-icons point-opt"> <a class="btn btn-icon-toggle" href="#"><i class="fa fa-arrows"></i></a> <a class="btn btn-icon-toggle" href="#"><i class="fa fa-trash-o"></i></a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card w-225">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:0;">
+                      <label>Post is accepted</label>
+                      <div class="row">
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control input-xxl" value="2">
+                        </div>
+                        <div class="col-sm-2 opts-icons point-opt"> <a class="btn btn-icon-toggle" href="#"><i class="fa fa-arrows"></i></a> <a class="btn btn-icon-toggle" href="#"><i class="fa fa-trash-o"></i></a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 class="card-main-title">Badges</h3>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>Page Heading <span class="page-sub-heading">Main page title</span></label>
+                      <input type="text" class="form-control" value="Badges System">
+                    </div>
+                    <div class="form-group">
+                      <label>Sub title <span class="page-sub-heading">The description that appears under the title</span></label>
+                      <input type="text" class="form-control" value="You earn reputation when people vote on your posts">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="card-main-title pad-t30">Badge Qualifications</h3>
+            <div class="card">
+              <div class="card-body">
+                <div class="opts-icons badge-opt"> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-arrows"></i></a> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-trash-o"></i></a> </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Points required</label>
+                      <div class="input-group"> <span class="input-group-addon point-color bg-purple">&nbsp;</span>
+                        <input type="text" class="form-control" value="1500">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label>Rank name</label>
+                      <input type="text" value="Professor" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:5px;">
+                      <label>Check the features which this rank can do:</label>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option1">
+                            <span>Leave comments</span> </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option2">
+                            <span>Vote up</span> </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="opts-icons badge-opt"> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-arrows"></i></a> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-trash-o"></i></a> </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Points required</label>
+                      <div class="input-group"> <span class="input-group-addon point-color bg-yellow">&nbsp;</span>
+                        <input type="text" class="form-control" value="1500">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label>Rank name</label>
+                      <input type="text" value="Professor" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:5px;">
+                      <label>Check the features which this rank can do:</label>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option1">
+                            <span>Leave comments</span> </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option2">
+                            <span>Vote up</span> </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="opts-icons badge-opt"> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-arrows"></i></a> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-trash-o"></i></a> </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Points required</label>
+                      <div class="input-group"> <span class="input-group-addon point-color bg-green">&nbsp;</span>
+                        <input type="text" class="form-control" value="1500">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label>Rank name</label>
+                      <input type="text" value="Professor" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:5px;">
+                      <label>Check the features which this rank can do:</label>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option1">
+                            <span>Leave comments</span> </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option2">
+                            <span>Vote up</span> </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="opts-icons badge-opt"> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-arrows"></i></a> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-trash-o"></i></a> </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Points required</label>
+                      <div class="input-group"> <span class="input-group-addon point-color bg-blue">&nbsp;</span>
+                        <input type="text" class="form-control" value="1500">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label>Rank name</label>
+                      <input type="text" value="Professor" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:5px;">
+                      <label>Check the features which this rank can do:</label>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option1">
+                            <span>Leave comments</span> </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option2">
+                            <span>Vote up</span> </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="opts-icons badge-opt"> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-arrows"></i></a> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-trash-o"></i></a> </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Points required</label>
+                      <div class="input-group"> <span class="input-group-addon point-color bg-gold">&nbsp;</span>
+                        <input type="text" class="form-control" value="1500">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label>Rank name</label>
+                      <input type="text" value="Professor" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:5px;">
+                      <label>Check the features which this rank can do:</label>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option1">
+                            <span>Leave comments</span> </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option2">
+                            <span>Vote up</span> </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="opts-icons badge-opt"> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-arrows"></i></a> <a href="#" class="btn btn-icon-toggle"><i class="fa fa-trash-o"></i></a> </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Points required</label>
+                      <div class="input-group"> <span class="input-group-addon point-color bg-sky">&nbsp;</span>
+                        <input type="text" class="form-control" value="1500">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label>Rank name</label>
+                      <input type="text" value="Professor" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-bottom:5px;">
+                      <label>Check the features which this rank can do:</label>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option1">
+                            <span>Leave comments</span> </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="checkbox-inline checkbox-styled checkbox-success">
+                            <input type="checkbox" checked value="option2">
+                            <span>Vote up</span> </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- END CONTENT --> 
+  
+  <!-- BEGIN MENUBAR-->
+  <div id="menubar" class=" ">
+    <div class="menubar-fixed-panel">
+      <div> <a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);"> <i class="fa fa-bars"></i> </a> </div>
+      <div class="expanded"> <a href="#"> <span class="text-lg text-bold text-primary ">RELATIO&nbsp;ADMIN</span> </a> </div>
+    </div>
+    <div class="menubar-scroll-panel"> 
+      <!-- BEGIN MAIN MENU -->
+      
+      <ul id="main-menu" class="gui-controls">
+        <li> <a href="index.html">
+          <div class="gui-icon"><i class="micon icon-1"></i></div>
+          <span class="title">Admin &amp; Settings</span> </a> </li>
+        <li> <a href="pages.html">
+          <div class="gui-icon"><i class="micon icon-2"></i></div>
+          <span class="title">Pages</span> </a> </li>
+        <li> <a href="tags.html">
+          <div class="gui-icon"><i class="micon icon-3"></i></div>
+          <span class="title">Tags</span> </a> </li>
+        <li> <a href="badges.html" class="active">
+          <div class="gui-icon"><i class="micon icon-4"></i></div>
+          <span class="title">Badges</span> </a> </li>
+        <li> <a href="classifications.html">
+          <div class="gui-icon"><i class="micon icon-5"></i></div>
+          <span class="title">Classifications</span> </a> </li>
+        <li> <a href="type.html">
+          <div class="gui-icon"><i class="micon icon-6"></i></div>
+          <span class="title">Type</span> </a> </li>
+        <li> <a href="users.html">
+          <div class="gui-icon"><i class="micon icon-7"></i></div>
+          <span class="title">Users</span> </a> </li>
+        <li> <a href="abuse-reports.html">
+          <div class="gui-icon"><i class="micon icon-8"></i></div>
+          <span class="title">Abuse Reports <span class="badge style-danger">4</span></span> </a> </li>
+      </ul>
+      
+      <!-- END MAIN MENU -->
+      
+      <div class="menubar-foot-panel"> <small class="hidden-folded"> <span>&copy; copyright 2016 Relatio Pty. Ltd.</span> <strong style="font-size:14px;">website by Zain Digital</strong> </small> </div>
+    </div>
+  </div>
+  <!-- END MENUBAR --> 
+  
+</div>
+<!-- END BASE --> 
+
+<!-- BEGIN JAVASCRIPT --> 
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/jquery-migrate-1.2.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.nanoscroller.min.js"></script> 
+<script src="js/main.js"></script> 
+<!-- END JAVASCRIPT -->
+</body>
+</html>
